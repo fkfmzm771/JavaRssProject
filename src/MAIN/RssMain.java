@@ -12,5 +12,6 @@ public class RssMain {
 		for (Nyaa_si_FeedMessage message : feed.getMessages()) {
 			System.out.println(message);
 		}
+
 	}
 }
