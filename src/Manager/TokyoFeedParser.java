@@ -1,5 +1,8 @@
 package Manager;
 
+import VO.Nyaa_si.Nyaa_si_Feed;
+import VO.Nyaa_si.Nyaa_si_FeedMessage;
+
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -12,10 +15,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import VO.Nyaa_si.Nyaa_si_Feed;
-import VO.Nyaa_si.Nyaa_si_FeedMessage;
-
-public class NyaaFeedParser {
+public class TokyoFeedParser {
 	private List<Nyaa_si_FeedMessage> nyaaList;
 
 	static final String TITLE = "title";   //타이틀
@@ -34,7 +34,7 @@ public class NyaaFeedParser {
 
 	private URL url;
 
-	public NyaaFeedParser(String url) {
+	public TokyoFeedParser(String url) {
 		try {
 			nyaaList = new ArrayList<>();
 			this.url = new URL(url);
